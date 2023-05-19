@@ -5,7 +5,7 @@ export class Newsitem extends Component {
     let {title,description,imageUrl,newsUrl}=this.props
     return (
       <div>
-        <div className="card" style={{width:"18rem"}}>
+        <div className="card">
         <img src={imageUrl ? imageUrl : "https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-7509.jpg?w=900"} className="card-img-top" alt="..." />
 
           <div className="card-body">
