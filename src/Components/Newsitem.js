@@ -6,7 +6,7 @@ export class Newsitem extends Component {
     return (
       <div>
         <div className="card">
-        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'90%',zIndex:'1'}} >{source} </span>
+        <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'90%',zIndex:'1'}} >{source} </span>
         <img src={imageUrl ? imageUrl : "https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-7509.jpg?w=900"} className="card-img-top" alt="..." />
 
           <div className="card-body">
