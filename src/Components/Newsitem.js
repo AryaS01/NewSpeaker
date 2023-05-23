@@ -1,12 +1,19 @@
-import React, { Component } from "react";
-
-export class Newsitem extends Component {
-  render() {
-    let {title,description,imageUrl,newsUrl,author,date,source}=this.props
+import React from "react";
+const Newsitem =(props)=> {
+    let {title,description,imageUrl,newsUrl,author,date,source}=props;
     return (
-      <div>
-        <div className="card">
-        <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{left:'90%',zIndex:'1'}} >{source} </span>
+      
+        <div className="my-3 ">
+           <div className="card">
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                        position: 'absolute',
+                        right: '0'
+                    }
+                  }>
+        <span className=" badge rounded-pill bg-danger"  >{source} </span>
+        </div>
         <img src={imageUrl ? imageUrl : "https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-7509.jpg?w=900"} className="card-img-top" alt="..." />
 
           <div className="card-body">
@@ -18,11 +25,11 @@ export class Newsitem extends Component {
             <a href={newsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
               Read more
             </a>
+            </div>
           </div>
         </div>
-      </div>
-    );
-  }
+        
+    )
 }
 
-export default Newsitem;
+export default Newsitem
