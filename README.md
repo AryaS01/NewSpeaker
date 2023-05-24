@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Please note that due to the reliance on  News API for server data, this web application can only be executed locally on individual servers, ensuring secure and efficient access to the API.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
